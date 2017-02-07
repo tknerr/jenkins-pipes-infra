@@ -1,5 +1,5 @@
 
-# Jenkins Pipes
+# Jenkins Pipes Infrastructure
 
 This is meant to be a minimal example showing how to set up Jenkins 2.x with the [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) to support the following scenario:
 
@@ -17,7 +17,6 @@ $ docker build -t jenkins-pipes .
 $ docker run -it --rm -p 8080:8080 jenkins-pipes
 ```
 
-Once Jenkins is started you should see at least the seed-job:
-http://localhost:8080
+Once Jenkins is started you should see at least the seed-job on [http://localhost:8080](http://localhost:8080).
 
 If it has not run yet, simply trigger it and see how the actual jobs get created.
