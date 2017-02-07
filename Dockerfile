@@ -10,3 +10,7 @@ RUN install-plugins.sh \
   git:3.0.1 \
   workflow-aggregator:2.5
 
+# create the seed job which spawns all other jobs
+RUN mkdir -p /usr/share/jenkins/ref/jobs/seed-job
+COPY seedJob.xml /usr/share/jenkins/ref/jobs/seed-job/config.xml
+
