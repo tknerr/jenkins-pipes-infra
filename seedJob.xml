@@ -17,7 +17,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/tknerr/jenkins-pipes-jobs.git</url>
+        <url>__JOBS_REPO__</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -56,4 +56,3 @@
   <publishers/>
   <buildWrappers/>
 </project>
-

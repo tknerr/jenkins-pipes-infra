@@ -14,3 +14,6 @@ RUN install-plugins.sh \
 RUN mkdir -p /usr/share/jenkins/ref/jobs/seed-job
 COPY seedJob.xml /usr/share/jenkins/ref/jobs/seed-job/config.xml
 
+# allow to pass in the jobs repo as a --build-arg
+ARG jobs_repo=https://github.com/tknerr/jenkins-pipes-jobs.git
+RUN sed -i "s!__JOBS_REPO__!$jobs_repo!" /usr/share/jenkins/ref/jobs/seed-job/config.xml
