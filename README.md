@@ -28,7 +28,7 @@ It's simply a minimalized jenkins (master only) setup that is running in a docke
 
  * inherits from the official [`jenkins:2.32.2`](https://hub.docker.com/r/library/jenkins/) image
  * skips the setup wizard and leaves jenkins unsecured
- * installs the minimum necessary `job-dsl`, `git` and `workflow-aggregator` plugins
+ * installs the minimum necessary [Job-DSL](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin), [Git](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin) and [Pipeline](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) plugins
  * copies the [`seedJob.xml`](https://github.com/tknerr/jenkins-pipes-infra/blob/master/seedJob.xml) to the Jenkins jobs directory
 
 Optionally, you can pass the `--build-args jobs_repo=...` parameter to configure the seed job with your own jobs repository.
